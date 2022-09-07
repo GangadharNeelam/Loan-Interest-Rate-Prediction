@@ -4,6 +4,12 @@
 A company is in the financial lending business and provides loans to retail customers. It currently uses a process of first collecting certain customer information (attributes), analyzing it manually to decide whether the customer is eligible for a loan or not, and if eligible, telling the customer at what rate of interest rates it can avail the requested loan. Going forward the company wants to employ an automated process which is based upon a Machine Learning model. Not only is this model expected to make the decisioning process faster, but also keep it free from human error and biases.
 
 ### Approach
+- At first the preprocessing techniques need to performed on the data set which includes cleaning the data ,handling missing values and outliers
+- The next step includes visualization of the features and drawing useful insights from the data 
+- We have to perform some key analysis from the data and find out relations of independent features with target feature
+- As it is multiclassification problem we chose decision tree classifier as the algorithm to develop the model
+
+### Tasks performed
 - Data collection
 - Data wrangling
 - Exploratory Data Analysis
@@ -17,9 +23,9 @@ A company is in the financial lending business and provides loans to retail cust
 ## Analysis/ Modeling Methodology
 
 ### Data Preparation & EDA
-    - Sub-setting is done by removing Loan_ID.
-    - All the missing values have been replaced with corresponding mean or mode.
-    - Extensive bi-variate analysis conducted on all meaningful variables.
+- Sub-setting is done by removing Loan_ID.
+- All the missing values have been replaced with corresponding mean or mode.
+- Extensive bi-variate analysis conducted on all meaningful variables.
 
 ### Variable Creation and  Selection
   * 20+ new variables created as a part of feature engineering.
@@ -35,29 +41,6 @@ A company is in the financial lending business and provides loans to retail cust
   * Conducted k-cross validation for k=5,10,15.
   * Model performance also assessed on a hold-out sample of size 20% of the original dataset.
   * Performed all the required metrics precision ,recall, confusion matrix ,roc_auc curve.
-
-### Extended Data Dictionary
-![image](https://user-images.githubusercontent.com/93145713/169710826-97780919-beb8-4105-9bd8-3df4351c431b.png)
-
-### Data distribution with respect to interest rates
-                                       Interest rate 1
-![image](https://user-images.githubusercontent.com/93145713/169710942-ea356836-a2f6-4773-9650-13cf4ac56d93.png)
-
-                                       Interest rate 2
-![image](https://user-images.githubusercontent.com/93145713/169710965-be364bf6-ccc7-4725-b135-97d03e5d9fba.png)
-
-                                       Interest rate 3
-![image](https://user-images.githubusercontent.com/93145713/169710971-f9e12f63-9d95-4f0a-beee-f64d6a992656.png)
-
-![image](https://user-images.githubusercontent.com/93145713/169711129-0ce23c40-a5d7-4a50-a8cd-5cae8e3b49b2.png)
-
-![image](https://user-images.githubusercontent.com/93145713/169711151-36fc5705-b1b0-49e2-9e6d-5d454acb4109.png)
-
-![image](https://user-images.githubusercontent.com/93145713/169711180-a7d5dcd4-42ae-4743-b18a-8d38e2565213.png)
-
-Corelation matrix
-
-![image](https://user-images.githubusercontent.com/93145713/169711287-a9b01ed0-ee7d-4d83-8e75-b02e25ce45a1.png)
 
 
 ### Model Building
